@@ -1,0 +1,5 @@
+gbdxtools>=0.15.12
+Shapely>=1.6.4.post1
+geopandas>=0.4.0
+requests>=2.19.1
+geojson>=2.4.0
