@@ -8,6 +8,8 @@ This is a simple cli to Digital Globe's GBDX platform, this was designed from th
 	* [init](#init)
     * [info](#info)
     * [simple search](#simple-search)
+    * [metadata export](#metadata-export)
+    * [footprint export](#footprint-export)
 
 ## Installation
 This assumes that you have native python & pip installed in your system, you can test this by going to the terminal (or windows command prompt) and trying
@@ -92,4 +94,33 @@ optional arguments:
   --start START  start date YYYY-MM-DD
   --end END      end date YYYY-MM-DD
   --limit LIMIT  Limit the number of items to search
+```
+
+### metadata export
+This script allows you to use the same structure as the simple search but exports metadata for each item type or categories into individual JSON files that are written based on their imagery type. The script can handle GeoJSON, KML or Shapefile and exports the metadata as JSON files.
+
+```
+usage: pygbdx.py metadata [-h] [--local LOCAL] [--start START] [--end END]
+                          [--limit LIMIT]
+
+optional arguments:
+  -h, --help     show this help message and exit
+  --local LOCAL  full path for folder or file with SHP/KML/GEOJSON
+  --start START  start date YYYY-MM-DD
+  --end END      end date YYYY-MM-DD
+  --limit LIMIT  Limit the number of items to search
+```
+
+### footprint export
+This features can be used to simple extract the imagery footprint from the JSON metadata we derived earlier and then converted into a GeoJSON files. Again both individual geometry as well as combined geometry as a single GeoJSON file.
+
+```
+usage: pygbdx.py footprint [-h] [--local LOCAL] [--dirc DIRC]
+                           [--output OUTPUT]
+
+optional arguments:
+  -h, --help       show this help message and exit
+  --local LOCAL    full path for folder with metadata JSON files
+  --dirc DIRC      directory to store individual geometries
+  --output OUTPUT  path to combined footprint geometry geojson
 ```

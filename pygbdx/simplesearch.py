@@ -22,8 +22,6 @@ def search(path,start,end,limit):
     end=str(end)+str('T12:00:00.000Z')
     if os.path.isfile(path):
         cd=shp2cordfile(path)
-        print('')
-        print('Searching DG assets for '+str(things))
         payload= {"searchAreaWkt": cd,"startDate": start,"endDate": end,"types":["DigitalGlobeProduct"],"limit":limit}
         payload=json.dumps(payload)
         headers = {
