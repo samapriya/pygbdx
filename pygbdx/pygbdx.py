@@ -94,14 +94,14 @@ def main(args=None):
     parser_simple_search.add_argument('--limit',help='Limit the number of items to search')
     parser_simple_search.set_defaults(func=simple_search_from_parser)
 
-    parser_metadata = subparsers.add_parser('metadata',help='Exports metadata for simple search into constitudent folders as JSON files')
+    parser_metadata = subparsers.add_parser('metadata',help='Exports metadata for simple search into constitutent folders as JSON files')
     parser_metadata.add_argument('--local',help='full path for folder or file with SHP/KML/GEOJSON')
     parser_metadata.add_argument('--start',help='start date YYYY-MM-DD')
     parser_metadata.add_argument('--end',help='end date YYYY-MM-DD')
     parser_metadata.add_argument('--limit',help='Limit the number of items to search')
     parser_metadata.set_defaults(func=metadata_from_parser)
 
-    parser_footprint = subparsers.add_parser('footprint',help='Exports footprint for metadata files extracted earlier and converts them to indidual geometries (GeoJSON) and combined geomtry (GeoJSON) file')
+    parser_footprint = subparsers.add_parser('footprint',help='Exports footprint for metadata files extracted earlier and converts them to individual geometries (GeoJSON) and combined geomtry (GeoJSON) file')
     parser_footprint.add_argument('--local',help='full path for folder with metadata JSON files')
     parser_footprint.add_argument('--dirc',help='directory to store individual geometries')
     parser_footprint.add_argument('--output',help='path to combined footprint geometry geojson')
