@@ -124,3 +124,10 @@ optional arguments:
   --dirc DIRC      directory to store individual geometries
   --output OUTPUT  path to combined footprint geometry geojson
 ```
+
+## Changelog
+
+### v0.0.2
+
+- Bug fixes
+- Minor improvements

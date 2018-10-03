@@ -14,7 +14,7 @@ path=os.path.dirname(os.path.realpath(__file__))
 
 
 def init():
-    subprocess.call('python autenticator.py', shell=True)
+    subprocess.call('python authenticator.py', shell=True)
 def init_from_parser(args):
     init()
 
