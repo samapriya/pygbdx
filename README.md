@@ -1,4 +1,7 @@
 # pygbdx: Simple CLI for GBDX
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1445734.svg)](https://doi.org/10.5281/zenodo.1445734)
+[![PyPI version](https://badge.fury.io/py/pygbdx.svg)](https://badge.fury.io/py/pygbdx)
+
 This is a simple cli to Digital Globe's GBDX platform, this was designed from the perspective of community user (the freely available tier). This platform allows you to access all of DG's Open data and also open Ikonos data along with Landsat and Sentinel datasets. You can create a [notebook acccount here](https://notebooks.geobigdata.io). I realized that the gbdx python libraries could be wrapped in a simple CLI and include additional features to serve as a functional CLI and this project is an attempt at doing that. The notebook setup offers additional tools, a GUI and interactive framework while CLI simplifies some of the operational needs of batch processing and performing calls using your own local machine.
 
 ## Table of contents
