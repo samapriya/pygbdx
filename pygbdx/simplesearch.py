@@ -20,7 +20,7 @@ def search(path,start,end,limit):
         end=str(end)+str('T12:00:00.000Z')
         if os.path.isfile(path):
             cd=shp2cordfile(path)
-            payload= {"searchAreaWkt": cd,"startDate": start,"endDate": end,"types":["DigitalGlobeProduct"],"limit":limit}
+            payload= {"searchAreaWkt": cd,"startDate": start,"endDate": end,"limit":limit}
             payload=json.dumps(payload)
             headers = {
                 'Content-Type': "application/json",

@@ -28,6 +28,8 @@ If you get no errors and you have python 2.7.14 or higher you should be good to 
 
 **This also needs gbdxtools to be [installed on your system](https://gbdxtools.readthedocs.io/en/latest/)**
 
+It has been brought to my attention that installing shapely on windows is not simply ```pip install shapely``` so install Shapely separately and [use instructions from their pypi project page](https://pypi.org/project/Shapely/) for Windows installation **Shapely is important requirement for the tool but since the installation varies based on the operating system install it using the earlier instructions anyways before the next steps**. On other operating systems ```pip install shapely``` should work just fine.
+
 To install **pygbdx: Simple CLI for GBDX** you can install using two methods
 
 ```pip install pygbdx```
@@ -134,6 +136,10 @@ optional arguments:
 ```
 
 ## Changelog
+
+### v0.0.3
+
+- Fixed issue with Shapely install on windows
 
 ### v0.0.2
 

@@ -18,10 +18,10 @@ def readme():
         return f.read()
 setuptools.setup(
     name='pygbdx',
-    version='0.0.2',
+    version='0.0.3',
     packages=find_packages(),
     url='https://github.com/samapriya/pygbdx',
-    install_requires=['gbdxtools>=0.15.12','Shapely>=1.6.4.post1','geopandas>=0.4.0','requests>=2.19.1','geojson>=2.4.0'],
+    install_requires=['gbdxtools>=0.15.12','geopandas>=0.4.0','requests>=2.19.1','geojson>=2.4.0'],
     license='Apache 2.0',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
